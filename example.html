@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PieTimer example</title>
+
+  <link rel="stylesheet" type="text/css" href="pietimer.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.pietimer.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+      $('#timer').pietimer({
+          timerSeconds: 10,
+          color: '#234',
+          fill: false,
+          showPercentage: true,
+          callback: function() {
+              alert("yahoo, timer is done!");
+              $('#timer').pietimer('reset');
+          }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="timer"></div>
+</body>
+</html>
