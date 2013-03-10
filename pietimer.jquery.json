@@ -3,6 +3,8 @@
   "title": "jQuery PieTimer",
   "description": "A CSS3-based pie timer.",
   "keywords": [
+    "ui",
+    "animation",
     "time",
     "timer",
     "timing",
